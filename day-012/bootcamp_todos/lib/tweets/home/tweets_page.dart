@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../widgets/item_button.dart';
 
-class TweetPage extends StatefulWidget {
-  const TweetPage({Key? key}) : super(key: key);
+class TweetsPage extends StatefulWidget {
+  const TweetsPage({Key? key}) : super(key: key);
 
   @override
-  State<TweetPage> createState() => _TweetPageState();
+  State<TweetsPage> createState() => _TweetsPageState();
 }
 
-class _TweetPageState extends State<TweetPage> {
+class _TweetsPageState extends State<TweetsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +31,7 @@ class _TweetPageState extends State<TweetPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => const TweetPage(),
+                      builder: (_) => const TweetsPage(),
                     ),
                   );
                 },
